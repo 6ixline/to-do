@@ -12,8 +12,9 @@ document.getElementById('add').addEventListener('click',function (){
 });
 
 function removeItem(){
-	
-	document.getElementById("todo").removeChild(this.parentNode.parentNode);
+	const item = this.parentNode.parentNode;
+	const parent = item.parentNode;
+	parent.removeChild(item);
 }
 
 function completeItem() {
