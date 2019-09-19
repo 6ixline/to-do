@@ -186,12 +186,13 @@ ul.todo:not(#completed) li .buttons button.complete:hover svg{
 ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
 	fill:white;
 }
-ul.todo#completed:not(:empty){
+
+.container #completed{
 	position: relative;
 	padding:60px 0 0 0;
 }
 
-ul.todo#completed:not(:empty)::before {
+.container #completed::before {
 	content: "";
 	width: 150px;
 	height: 1px;
@@ -201,3 +202,22 @@ ul.todo#completed:not(:empty)::before {
 	left:50%;
 	margin:0 0 0 -75px;
 }
+
+.container #todo:empty:after{
+	content:"You have nothing to-do!";
+	margin:15px 0 0 0;
+}
+
+.container #completed:empty:after{
+	content:"You haven't done any task yet!";
+}
+
+.container #todo::after,
+.container #completed::after{:
+	width:100%;
+	display: block;
+	font-size:12px;
+	text-align: center;
+	color: #aaa;
+}
+
