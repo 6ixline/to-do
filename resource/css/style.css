@@ -223,31 +223,3 @@ ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
 
 
 
-.loader{
-	background:#25b99a;
-	position:fixed;
-	width:100%;
-	min-height:100%;
-	display:flex;
-	justify-content:space-around;
-	align-items: center;
-	font-size: 15px;
-	color:white;
-	animation: bounce 1s ease infinite;
-	z-index:99;
-}
-
-@keyframes bounce{
-	0%{
-		font-size:0px;
-	}
-	25%{
-		font-size:15px;
-	}
-	50%{
-		font-size: 0px;
-	}
-	100%{
-		font-size: 15px;
-	}
-}
