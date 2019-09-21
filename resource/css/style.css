@@ -226,7 +226,7 @@ ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
 }
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 780px){
 	.illustrate{
 		display:block;
 		height: 150px;
