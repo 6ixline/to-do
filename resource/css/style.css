@@ -233,7 +233,7 @@ ul.todo:not(#completed) li .buttons button.complete:hover svg .fill{
 
 		width:150px;
 		position:relative;
-		bottom:10px;
+		bottom:0px;
 		left:50%;
 		margin-left:-75px;
 	}
